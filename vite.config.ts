@@ -10,7 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/my-portfolio/', // Replace 'my-portfolio' with your actual repository name
+  base: '/PortFolio/', // Replace 'my-portfolio' with your actual repository name
   build: {
     outDir: 'dist',
     sourcemap: false,
