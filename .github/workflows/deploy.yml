@@ -31,7 +31,7 @@ jobs:
         run: npm ci
         
       - name: Build project
-        run: npm run build
+        run: NODE_ENV=production npm run build
         
       - name: Setup SPA routing (404.html)
         run: cp dist/index.html dist/404.html

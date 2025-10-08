@@ -10,7 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/PortFolio/', // Replace 'my-portfolio' with your actual repository name
+  base: process.env.NODE_ENV === 'production' ? '/PortFolio/' : '/',
   build: {
     outDir: 'dist',
     sourcemap: false,
